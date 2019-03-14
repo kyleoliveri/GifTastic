@@ -4,12 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>GifTastic | Kyle Oliveri</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="jumbotron text-center">
+                <h1 class="display-4">GifTastic!</h1>
+              </div>
+          </div>
+
+          <div class="w-100"></div>
+          
+          <div class="col">Gif Display
+              <div class="border" id="gifDisplay"></div>
+          </div>
+          <div class="col">
+            <form>
+                <div class="form-group">
+                  <label for="Gif Adder">Add a Gif!</label>
+                  <input type="text" class="form-control" id="addGif">
+                </div>
+                <button type="submit" class="btn" id="submit">Submit</button>
+            </form>
+            
+            <div class="card-body border">
+                <h5 class="card-title">Which Gif Do You Want To See?</h5>
+                <div id="gifButtons">
+                        <!-- <button data-name="Michael+Scott" type="button" class="btn btn-dark">Michael Scott</button>
+                        <button data-name="Dwight+Schrute" type="button" class="btn btn-dark">Dwight Schrute</button>
+                        <button data-name="Stanley+Hudson" type="button" class="btn btn-dark">Stanley Hudson</button>
+                        <button data-name="Jim+Halpern" type="button" class="btn btn-dark">Jim Halpern</button> -->
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

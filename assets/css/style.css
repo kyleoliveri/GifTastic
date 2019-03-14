@@ -1,0 +1,24 @@
+/****** MAIN ******/
+body {
+    font-family: 'Cinzel', serif;
+}
+
+/****** HEADER ******/
+.jumbotron {
+    background: black;
+    color: white;
+}
+
+/****** BODY ******/
+.btn {
+    background: black;
+    color: white;
+    margin-bottom: 15px;
+}
+.gif {
+    margin: 5px;
+    background: black;
+    color: white;
+    border: none;
+    padding: 5px;
+}
