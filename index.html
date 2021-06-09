@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+        http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- GOOGLE FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
-    
-    <!-- BOOTSTRAP LINK -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-    <!-- CSS STYLESHEET -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-    <title>GifTastic | Kyle Oliveri</title>
-</head>
-<body>
-    <div class="container">
+        <!-- BOOTSTRAP LINK -->
+        <link
+        rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- CSS STYLESHEET -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <title>GifTastic | Kyle Oliveri</title>
+    </head>
+    <body>
+
         <div class="row">
-          <div class="col">
-            <div class="jumbotron text-center">
-                <h1 class="display-4">GifTastic!</h1>
-              </div>
-          </div>
-
-          <div class="w-100"></div>
-          
-          <!-- GIF DISPLAY -->
-          <div class="col">Gif Display
-              <div class="border" id="gifDisplay"></div>
-          </div>
-
-          <!-- TEXT FIELD / SUBMIT BUTTON -->
-          <div class="col">
-            <form>
-                <div class="form-group">
-                  <label for="Gif Adder">Add a Gif!</label>
-                  <input type="text" class="form-control" id="addGif">
-                </div>
-                <button type="submit" class="btn" id="submit">Submit</button>
-            </form>
-            
-            <!-- GIF BUTTON DISPLAY -->
-            <div class="card-body border">
-                <h5 class="card-title">Which Gif Do You Want To See?</h5>
-                <div id="gifButtons">
+            <div class="col">
+                <div class="jumbotron text-center">
+                    <h1 class="display-4 headerTxt">GifTastic!</h1>
                 </div>
             </div>
           </div>
-        </div>
-      </div>
-</body>
+            <div class="w-100"></div>
+            <div class="container">
+              <div class="row">
+                <!-- GIF DISPLAY -->
+                <div class="col-sm-6 gifTxt"><h2>Gifs</h2>
+                    <div class="" id="gifDisplay"></div>
+                </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="assets/javascript/app.js"></script>
-
-</html>
+                <!-- TEXT FIELD / SUBMIT BUTTON -->
+                <div class="col-sm-6 center">
+                  <div class="addGif center">  
+                  <form>
+                        <div class="form-group">
+                            <h2 for="Gif Adder">Add a Gif!</h2>
+                            <input type="text" class="form-control" id="addGif">
+                        </div>
+                        <button type="submit" class="btn" id="submit">Submit</button>
+                    </form>
+                  </div>
+                    <!-- GIF BUTTON DISPLAY -->
+                    <div class="card-body">
+                        <h5 class="card-title">Which Gif Do You Want To See?</h5>
+                        <div id="gifButtons"></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </body>
+</html></div></body><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="assets/javascript/app.js"></script></html>

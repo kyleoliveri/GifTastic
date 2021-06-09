@@ -1,12 +1,13 @@
 /****** MAIN ******/
 body {
-    font-family: 'Cinzel', serif;
+    font-family: 'Roboto', sans-serif;
+    background: rgba(248, 240, 240, 0.521);
 }
 
 /****** HEADER ******/
 .jumbotron {
-    background: black;
-    color: white;
+    background: white;
+    color: black;
 }
 
 /****** BODY ******/
@@ -14,6 +15,7 @@ body {
     background: black;
     color: white;
     margin-bottom: 15px;
+    width: 90px;
 }
 .gif {
     margin: 5px;
@@ -21,4 +23,23 @@ body {
     color: white;
     border: none;
     padding: 5px;
+}
+
+.img {
+    width: 225px;
+    height: 225px;
+}
+
+.imgDiv {
+    max-width: auto;
+    max-height: auto;
+    padding: 10px;
+}
+
+.addGif {
+    padding: 20px;
+}
+
+#gifButtons {
+    width: auto;
 }

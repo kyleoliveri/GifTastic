@@ -1,5 +1,5 @@
 
-var topics = ["Michael Scott", "Dwight Schrute", "Stanley Hudson", "Jim Halpern", "Pam Beesly", "Kevin Malone", "Toby Flenderson", "Andy Bernard", "Angela Martin", "Creed Bratton", "Meredith Palmer"];
+var topics = ["Michael Scott", "Dwight Schrute", "Stanley Hudson", "Jim Halpern", "Pam Beesly", "Kevin Malone", "Toby Flenderson", "Andy Bernard", "Angela Martin", "Creed Bratton"];
 
 $(document).ready(function() {
 
@@ -42,12 +42,12 @@ $(document).ready(function() {
           
           var results = response.data;
 
-          for (var i = 0; i < results.length; i++) {
+          for (var i = 0; i < 7; i++) {
             var gifDiv = $("<div class='imgDiv'>");
-            var p = $("<p>").text("Rating: " + results[i].rating);
+            // var p = $("<p>").text("Rating: " + results[i].rating);
             var gifImage = $("<img data-state='still' data-still='"+ results[i].images.fixed_height_still.url +"'  data-animate='"+ results[i].images.fixed_height.url +"' class='img'>");
             gifImage.attr("src", results[i].images.fixed_height_still.url);
-            gifDiv.append(p);
+            // gifDiv.append(p);
             gifDiv.append(gifImage);
             $("#gifDisplay").prepend(gifDiv);
           }
